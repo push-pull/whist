@@ -1,2 +1,4 @@
 *.list
 *.list.gz
+*.pyc
+local_settings.py
