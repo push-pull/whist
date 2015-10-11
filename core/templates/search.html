@@ -1,0 +1,5 @@
+<p>Search for a movie:</p>
+<form id="movie_search" action="{% url 'search' %}" method="get">
+	<input name="query" type="text" value="{{ query }}">
+	<input type="submit" value="Search">
+</form>

@@ -8,7 +8,11 @@
 	</tr>
 	{% for movie in movies %}
 		<tr>
-			<td>{{ movie.getID }}</td>
+			<td>
+				<a href="{% url 'movie' movie_id=movie.getID %}">
+					{{ movie.getID }}
+				</a>
+			</td>
 			<td>{{ movie.title }}</td>
 		</tr>
 	{% endfor %}

@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+
+{% block title %}{{movie.title}} - WHIST{% endblock %}
+
+{% block content %}
+
+<h2>{{ movie.title }}</h2>
+<table border=1>
+	<tr>
+		<th>ID</th>
+		<th>Name</th>
+	</tr>
+	{% for actor in movie.cast %}
+		<tr>
+			<td>
+				<!-- <a href="{% url 'movie' movie_id=movie.getID %}"> -->
+					{{ actor.getID }}
+				<!-- </a> -->
+			</td>
+			<td>{{ actor.name }}</td>
+		</tr>
+	{% endfor %}
+</table>
+
+{% endblock %}
