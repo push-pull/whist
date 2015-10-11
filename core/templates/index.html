@@ -4,4 +4,13 @@
 
 {% block content %}
 	<h1>Where Have I Seen Them?</h1>
+
+	<p>Search for a movie:</p>
+	<form id="movie_search" action="{% url 'search' %}" method="get">
+		<input name="query" type="text" value="{{ query }}">
+		<input type="submit" value="Search">
+	</form>
+
+	{% block queryresults %}{% endblock %}
+
 {% endblock %}

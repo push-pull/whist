@@ -1,0 +1,16 @@
+{% extends "index.html" %}
+
+{% block queryresults %}
+<table border=1>
+	<tr>
+		<th>ID</th>
+		<th>Title</th>
+	</tr>
+	{% for movie in movies %}
+		<tr>
+			<td>{{ movie.getID }}</td>
+			<td>{{ movie.title }}</td>
+		</tr>
+	{% endfor %}
+</table>
+{% endblock %}
