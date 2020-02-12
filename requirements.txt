@@ -1,5 +1,5 @@
 decorator==4.0.4
-Django==1.11.23
+Django==1.11.28
 ipdb==0.8.1
 ipython==4.0.0
 ipython-genutils==0.1.0
