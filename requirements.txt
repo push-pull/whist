@@ -1,7 +1,7 @@
 decorator==4.0.4
 Django==1.11.28
 ipdb==0.8.1
-ipython==4.0.0
+ipython==7.16.3
 ipython-genutils==0.1.0
 MySQL-python==1.2.5
 path.py==8.1.1
